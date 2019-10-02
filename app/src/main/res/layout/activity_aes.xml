@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".AES_Activity">
+    tools:context=".bin.AES_Activity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -41,9 +41,14 @@
         android:textColor="@color/white" />
 
     <TextView
-        android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        tools:text="result:" />
+        android:text="Result:" />
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        tools:text="encrypted result here" />
 </LinearLayout>
