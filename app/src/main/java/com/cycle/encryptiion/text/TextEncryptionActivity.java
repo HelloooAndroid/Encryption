@@ -1,4 +1,4 @@
-package com.cycle.encryptiion;
+package com.cycle.encryptiion.text;
 
 import android.content.Context;
 import android.os.Build;
@@ -9,12 +9,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.cycle.encryptiion.utils.AesUtils;
-import com.cycle.encryptiion.utils.RsaUtils;
+import com.cycle.encryptiion.R;
+import com.cycle.encryptiion.text.utils.AesUtils;
+import com.cycle.encryptiion.text.utils.RsaUtils;
 
-public class Encryption_Activity extends AppCompatActivity implements View.OnClickListener {
+public class TextEncryptionActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private static final String TAG = "Encryption_Activity";
+    private static final String TAG = "TextEncryptionActivity";
     byte[] encryptedMsgBytes;
     TextView result;
     EditText message;
@@ -25,7 +26,7 @@ public class Encryption_Activity extends AppCompatActivity implements View.OnCli
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_aes);
+        setContentView(R.layout.activity_encryption);
 
         mContext = this;
 

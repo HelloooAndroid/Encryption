@@ -1,4 +1,4 @@
-package com.cycle.encryptiion.utils;
+package com.cycle.encryptiion.text.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;

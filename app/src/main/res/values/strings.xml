@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">Encryptiion</string>
+    <string name="app_name">Encryption</string>
+    <string name="encrypt_progress_message">Please wait while your image is encrypted</string>
+    <string name="encrypt_error">There was an error during encryption</string>
+    <string name="memory_error">The application ran out of memory</string>
+    <string name="encrypt_delete_error">The original file was not deleted, but the encrypted file was still saved. YOUR PICTURE IS STILL ACCESSIBLE IN UNENCRYPTED FORM</string>
+    <string name="decrypt_progress_message">Please wait while your image is decrypted</string>
+    <string name="decrypt_error">There was an error during decryption</string>
+    <string name="decrypt_delete_error">The encrypted file was not deleted, but the decrypted file was still saved</string>
+    <string name="load_error">Load Error</string>
+    <string name="loading">Loading…</string>
+    <string name="confirm_encrypt">Are you sure you want to encrypt the image %s ?</string>
 </resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simple way to perform encryption on Android using keystore."/>
+    <Button
+        android:id="@+id/text"
+        style="@style/AppButton"
+        android:layout_marginTop="10dp"
+        android:text="Text"/>
+    <Button
+        android:id="@+id/image"
+        style="@style/AppButton"
+        android:layout_marginTop="10dp"
+        android:text="Image"/>
+    <Button
+        android:id="@+id/audio"
+        style="@style/AppButton"
+        android:layout_marginTop="10dp"
+        android:text="Audio"/>
+    <Button
+        android:id="@+id/video"
+        style="@style/AppButton"
+        android:layout_marginTop="10dp"
+        android:text="Video"/>
+
+</LinearLayout>

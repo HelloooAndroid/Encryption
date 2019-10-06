@@ -1,4 +1,4 @@
-package com.cycle.encryptiion.utils;
+package com.cycle.encryptiion.text.utils;
 
 import android.content.Context;
 import android.os.Build;
@@ -34,7 +34,7 @@ public class AesUtils {
             throws Exception {
         Cipher cipher = null;
         cipher = Cipher.getInstance(AES_MODE);
-        cipher.init(Cipher.ENCRYPT_MODE, getSecretKey(context), new GCMParameterSpec(128, FIXED_IV));
+        cipher.init(Cipher.ENCRYPT_MODE, getSecretKey(), new GCMParameterSpec(128, FIXED_IV));
         byte[] cipherText = cipher.doFinal(message.getBytes("UTF-8"));
         return Base64.encodeToString(cipherText, 0).getBytes();
     }
@@ -44,13 +44,13 @@ public class AesUtils {
     public  static String decryptMsg(Context context,byte[] cipherText)
             throws Exception {
         Cipher cipher = Cipher.getInstance(AES_MODE);
-        cipher.init(Cipher.DECRYPT_MODE, getSecretKey(context), new GCMParameterSpec(128, FIXED_IV));
+        cipher.init(Cipher.DECRYPT_MODE, getSecretKey(), new GCMParameterSpec(128, FIXED_IV));
         byte[] decryptString = cipher.doFinal(Base64.decode(cipherText, 0));
         return new String(decryptString, "UTF-8");
 
     }
 
-    private static java.security.Key getSecretKey(Context context) throws Exception {
+    public static java.security.Key getSecretKey() throws Exception {
         return keyStore.getKey(ALIAS_NAME, null);
     }
 
